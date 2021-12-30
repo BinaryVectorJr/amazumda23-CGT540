@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	
+	.w3-row-padding img {margin-bottom: 12px}
+	<!-- /* Remove margins from "page content" on small screens */ -->
+	<!-- @media only screen and (max-width: 600px) {#main {margin-left: 0}} -->
+	.wrapper { text-align: center; }
+	.button {
+		position: absolute;
+		top: 50%;
+	}
+	
+	hr{ 
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+	
+		border=0;
+		height=1px;
+	}
+	
+	footer{
+		background-color: #222;
+	}
+	
+	body {
+		font-family: ubuntu
+		padding: 0;
+		margin: 0;
+		font-size: 18px;
+	}
+	
+	.img-circle{
+		border-radius: 50%;
+	}
+	
+	.container {
+	  position: relative;
+	  font-size: 18px;
+	}
+
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  border: 3px solid black;
+	  transition: .3s;
+	  background: linear-gradient(to left, #C28E0E, #98700D);
+	}
+	
+	.fa:hover {
+		color: gold !important;
+	}
+
+	.container:hover .overlay {
+	  	opacity: 3; 
+		filter: alpha(opacity=30);
+		
+		<!-- transition: all 0.5s ease-in-out; -->
+		<!-- -webkit-transition: all 0.5s ease-in-out; -->
+		<!-- -moz-transition: all 0.5s ease-in-out; -->
+		<!-- -o-transition: all 0.5s ease-in-out; -->
+		
+		
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		-moz-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		-webkit-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+	}	
+	
+
+	.text {
+	  color: black;
+	  font-size: 16px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+
+</style>
+
+<body class="w3-white">
+
+	<!-- BEGIN PAGE CONTENT -->
+	<div id="main">
+	<!-- Header/Home -->
+	<header class="w3-container w3-center w3-white" id="home">
+		<h1 class="w3-xxxlarge"><span class="w3-hide-small">I am</span> <strong>Angshuman Mazumdar</strong></h1>
+		<p>Engineer, Content Creator, and Game Developer.</p>
+		<img src="./images/me.jpg" alt="boy" class="w3-image w3-padding-large" width="600" height="600">
+	</header>
+
+	<!-- ABOUT SECTION -->
+	
+	<div class="w3-content w3-justify w3-text-grey w3-padding-large" id="about">
+		<h2 class="w3-text-grey"><b>ABOUT ME</b></h2>
+		<p>I'm a 22 years old and come from a city called Guwahati, in Assam (India). I did my Bachelors from Vellore Institute of Technology (VIT) in Electronics and Communication Engineering. I am an aspiring game developer, with most of my skills focussed on level design. Also an amateur concept artist and graphic designer, I like to focus my efforts on conceptualizing new ideas, and creating new stories. For me, video games are the perfect amalgamation of engineering, design, art, and philosophy. I believe that video games have trancscenfrom being a simple form of entertainment, to something that has the potential to deliver an other-worldly experience and brings communities together.
+		</p>
+		
+		<p>Currently, I am undertaking my Masters degree in Purdue University in the domain of Computer Graphics Technology. My primary focus is in the field of Virtual and Augmented Reality based concepts. <span><b>Boiler Up!</b></span>
+		</p>
+		
+		<hr>
+		
+		<!-- PORTFOLIO LINKS -->
+		<div class="w3-container w3-center w3-row w3-padding-large w3-margin-bottom">
+		
+			<div class="w3-row w3-margin-top w3-margin-bottom">
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./index.html"> <img src="./images/home.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Home</div>
+					</div>
+				</div>
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./f19_milestones.html"> <img src="./images/milestones.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Milestones</div>
+					</div>
+				</div>
+				
+				<!-- My Portfolio Link -->
+				<div class="w3-quarter container" id="links">
+					<a href="./f19_videos.html"> <img src="./images/youtube-normal.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Assignments</div>
+					</div>
+				</div>
+				
+				
+				<!-- My other work link -->
+				<div class="w3-quarter container" id="links">
+					<a href="./f19_blog.html"> <img src="./images/other-normal.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Critique Blog</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		</div>
+
+	</div>
+
+	<!-- w3-text-white makes the black icons into white -->
+
+	<!-- Footer -->
+	<footer class="w3-center w3-padding-32 w3-text-white">
+		<div class="w3-xxlarge">
+			<a href="https://twitter.com/BinaryVectorJr" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.instagram.com/binaryvectorjr/" target="_blank"><i class="fa fa-instagram w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.linkedin.com/in/angshuman-mazumdar-a0b75a130/" target="_blank"><i class="fa fa-linkedin w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://github.com/BinaryVectorJr" target="_blank"><i class="fa fa-github w3-text-white w3-hover-opacity"></i></a>&nbsp
+		</div>
+		<p class="w3-small"> © Angshuman Mazumdar, 2019 <img src="./images/AmmoCrate2.gif" alt="fun animation" style="padding-bottom: 10px;" <span title="My first animation!"></span></p>
+	</footer>
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+
+</html>

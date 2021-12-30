@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<title>Assignments</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	
+	.w3-row-padding img {margin-bottom: 12px}
+	<!-- /* Remove margins from "page content" on small screens */ -->
+	<!-- @media only screen and (max-width: 600px) {#main {margin-left: 0}} -->
+	.wrapper { text-align: center; }
+	.button {
+		position: absolute;
+		top: 50%;
+	}
+	
+	hr{ 
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+	
+		border=0;
+		height=1px;
+	}
+	
+	footer{
+		background-color: #222;
+		
+		<!-- FUTURE SELF REMOVE everything except bg color ONCE YOU ADD IN VIDEOS, ELSE IT WILL LOOK WIERD -->
+
+	}
+	
+	body {
+		font-family: ubuntu
+		padding: 0;
+		margin: 0;
+		font-size: 18px;
+	}
+	
+	.img-circle{
+		border-radius: 50%;
+	}
+	
+	.container {
+	  position: relative;
+	  font-size: 18px;
+	}
+
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  border: 3px solid black;
+	  transition: .3s;
+	  background: linear-gradient(to left, #C28E0E, #98700D);
+	}
+	
+	.fa:hover {
+		color: gold !important;
+	}
+
+	.container:hover .overlay {
+	  	opacity: 3; 
+		filter: alpha(opacity=30);
+		
+		<!-- transition: all 0.5s ease-in-out; -->
+		<!-- -webkit-transition: all 0.5s ease-in-out; -->
+		<!-- -moz-transition: all 0.5s ease-in-out; -->
+		<!-- -o-transition: all 0.5s ease-in-out; -->
+		
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		-moz-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		-webkit-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+	}	
+	
+
+	.text {
+	  color: black;
+	  font-size: 16px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+</style>
+
+<body class="w3-white">
+
+	<!-- BEGIN PAGE CONTENT -->
+	<div id="main">
+	
+	<!-- Header/Home -->
+	<header class="w3-container w3-center w3-white" id="home">
+		<h1 class="w3-xxxlarge"><strong>CGT540 ASSIGNMENTS</strong></h1>
+	</header>
+
+	<!-- ABOUT SECTION -->
+	
+	<div class="w3-content w3-justify w3-text-grey w3-padding-large" id="about">
+		This page holds the animation projects I have made for CGT540 (Current Topics in 3D Animation) - a subject I have enrolled for my Masters course. Videos and images are posted on per assignment basis. Hope you enjoy!
+				
+		<p class="w3-center"> Links to Maya project files: <a href=https://drive.google.com/open?id=1T3s70tuzK8xrLUbI6S58EJ8D1d-DFpg0 target="_blank">Here</a> </p>
+		
+		<hr>
+		
+		<h2 style="text-align:center">Assignment 1 - Bouncing Ball</h2>
+		
+		<br>
+		
+		<!-- ############################INSERT VIDEOS IN THIS PART - JUST COPY THE BELOW SYNTAX THAT LINKS THE CYBERPUNK VIDEO OF MINE############################## -->
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/-MhWwDoqgb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<br>
+		
+		<hr>
+		
+		<h2 style="text-align:center">Assignment 2 (Part A) - Facial Rigging</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<img width="853" height="505" src="./images/assignments/FaceRigInterface.png">
+			<p>Face Control Interface.</p>
+		</div>
+		
+		<div class="container w3-center">
+			<img width="853" height="505" src="./images/assignments/BoneStructure.png">
+			<p>The joints and skeleton placement.</p>
+		</div>
+		
+		<div class="container w3-center">
+			<img width="853" height="560" src="./images/assignments/Vizemes.png">
+			<p>Visemes showing different major emotions.</p>
+		</div>
+		
+		<div class="container w3-center">
+			<img width="853" height="560" src="./images/assignments/Major.png">
+			<p>Visemes showing different vowels and consonents.</p>
+		</div>
+		
+		<div class="container w3-center">
+			<img width="853" height="560" src="./images/assignments/demo.png">
+			<p>Facial Rig Demo</p>
+		</div>
+		
+		<hr>
+		
+		<h2 style="text-align:center">Assignment 2 (Part B) - LipSync</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/nwp4LXheU2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>Original Version</p>
+		</div>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/YxLY6j93D7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>Corrected Version</p>
+		</div>
+		
+		<hr>
+		
+		<h2 style="text-align:center">Assignment 3 (Part A) - Segmented Character Rig</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<img width="853" height="560" src="./images/segmented/Segmented-Full.png">
+			<p>Segmented Rig</p>
+		</div>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<img width="853" height="560" src="./images/segmented/Posed.png">
+			<p>Posed Segmented Rig</p>
+		</div>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<img src="./images/segmented/Layers.png">
+			<p>Layers</p>
+		</div>
+		
+		<hr>
+		
+		<h2 style="text-align:center">Assignment 3 (Part B) - Walk Cycles</h2>
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/jS4r5LOnrSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+			<p>Walk Cycle 1 - Default with Prop</p>
+		</div>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/QzQviHTbkIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>Walk Cycle 2 - Happy Walk Cycle</p>
+		</div>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/MoyB6P3wjro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>Walk Cycle 3 - Nervous and Sad Walk Cycle</p>
+		</div>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/nkOdmA-nH3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>Walk Cycle 4 - Angry and Threatening Walk Cycle</p>
+		</div>
+		
+		<hr>
+		
+		
+		<!-- PORTFOLIO LINKS -->
+		<div class="w3-container w3-center w3-row w3-padding-large w3-margin-bottom">
+		
+			<div class="w3-row w3-margin-top w3-margin-bottom">
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./index.html"> <img src="./images/home.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Home</div>
+					</div>
+				</div>
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./f19_about.html"> <img src="./images/person.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">About Me</div>
+					</div>
+				</div>
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./f19_milestones.html"> <img src="./images/milestones.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Milestones</div>
+					</div>
+				</div>
+				
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./f19_blog.html"> <img src="./images/other-normal.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Critique Blog</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		</div>
+
+	</div>
+	
+
+		
+
+	<!-- w3-text-white makes the black icons into white -->
+
+	<!-- Footer -->
+	<footer class="w3-center w3-padding-32 w3-text-white">
+		<div class="w3-xxlarge">
+			<a href="https://twitter.com/BinaryVectorJr" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.instagram.com/binaryvectorjr/" target="_blank"><i class="fa fa-instagram w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.linkedin.com/in/angshuman-mazumdar-a0b75a130/" target="_blank"><i class="fa fa-linkedin w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://github.com/BinaryVectorJr" target="_blank"><i class="fa fa-github w3-text-white w3-hover-opacity"></i></a>&nbsp
+		</div>
+		<p class="w3-small"> © Angshuman Mazumdar, 2019 <img src="./images/AmmoCrate2.gif" alt="fun animation" style="padding-bottom: 10px;" <span title="My first animation!"></span></p>
+	</footer>
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+
+</html>

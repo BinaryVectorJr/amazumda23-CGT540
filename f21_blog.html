@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<title>Fall 2021 Critique Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	
+	.w3-row-padding img {margin-bottom: 12px}
+	<!-- /* Remove margins from "page content" on small screens */ -->
+	<!-- @media only screen and (max-width: 600px) {#main {margin-left: 0}} -->
+	.wrapper { text-align: center; }
+	.button {
+		position: absolute;
+		top: 50%;
+	}
+	
+	hr{ 
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+	
+		border=0;
+		height=1px;
+	}
+	
+	footer{
+		<!-- position: fixed; -->
+		<!-- left: 0; -->
+		<!-- bottom: 0; -->
+		width: 100%;
+		background-color: #222;
+	
+		<!-- FUTURE SELF REMOVE everything except bg color ONCE YOU ADD IN VIDEOS, ELSE IT WILL LOOK WIERD -->
+
+	}
+	
+	body {
+		font-family: ubuntu
+		padding: 0;
+		margin: 0;
+		font-size: 18px;
+	}
+	
+	.img-circle{
+		border-radius: 50%;
+	}
+	
+	.container {
+	  position: relative;
+	  font-size: 18px;
+	}
+
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  border: 3px solid black;
+	  transition: .3s;
+	  background: linear-gradient(to left, #C28E0E, #98700D);
+	}
+	
+	.fa:hover {
+		color: gold !important;
+	}
+
+	.container:hover .overlay {
+	  	opacity: 3; 
+		filter: alpha(opacity=30);
+		
+		<!-- transition: all 0.5s ease-in-out; -->
+		<!-- -webkit-transition: all 0.5s ease-in-out; -->
+		<!-- -moz-transition: all 0.5s ease-in-out; -->
+		<!-- -o-transition: all 0.5s ease-in-out; -->
+		
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		-moz-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		-webkit-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+	}	
+	
+
+	.text {
+	  color: black;
+	  font-size: 16px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+	
+	.flexcontainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	
+	img{
+		margin: 5px;
+		transition: all 0.5s;
+	}
+	
+	img:hover{
+		transform: scale(1.05)
+	}
+	
+	.collapsible {
+	  background-color: #777;
+	  color: white;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	}
+
+.active, .collapsible:hover {
+	  background-color: #555;
+	}
+
+.content {
+	  padding: 0 18px;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	  background-color: #f1f1f1;
+	}
+</style>
+
+<body class="w3-white">
+
+	<!-- BEGIN PAGE CONTENT -->
+	<div id="main">
+	
+	<!-- Header/Home -->
+	<header class="w3-container w3-center w3-white" id="home">
+		<h1 class="w3-xxxlarge"><strong>FALL 2021 ANIMATION CRITIQUE: Dear Basketball</strong></h1>
+	</header>
+
+	<div class="w3-content w3-justify w3-text-grey w3-padding-large" id="about">
+	
+	<div class="w3-center">
+		Link to presentations and papers: <a href="https://drive.google.com/drive/folders/1Wa5RfRPx3c8xUJPy2e-FZjCA5L03Vpy6?usp=sharing" target="_blank"> Here</a>
+	</div>
+	
+		<!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
+		<hr>
+		
+			<div class="w3-center"></div>
+			
+			<div text-align="justify">
+				<b>Dear Basketball is an animated short that breathes life into Kobe's Bryant's farewell letter to the game of basketball, that he wrote to The Player's Tribune in 2015. Its deals with his early days, rise to glory, being the absolute pinnacle of basketball, and then his journey to the end.<br><br></b>
+				
+				<b>Directed By:</b> Glen Keane<br>
+				<b>Written By:</b> Kobe Bryant<br>
+				<b>Produced By:</b> Gennie Rim<br>
+				<b>Production Companies:</b> Granity Studios, Believe Entertainment Group, Glen Keane Productions<br>
+				<b>Won On:</b> March 4, 2018<br>
+				<b>Music Score:</b> John Williams<br>
+				<b>Modelling and Animation Technique:</b> Hand sketching<br>
+				<u>Note</u>: Aspect Ratio - 1.78:1 (HD); 12 FPS – gives it the stop motion style; monochrome with selective color (Lakers color palette)<br><br>
+				
+				<!-- <b>PLOT SUMMARY</b><br> -->
+				<!-- Mr. Hublot is about a man who is obsessively compelled with keeping his life in order and lead a very routine and monotonous life, with every little aspect of his life being meticulously planned and thought out. He leads most of his life in seclusion and solidarity, in a very quiet environment in his house. His house is comparatively smaller, which can be seen having all the things in order. Throughout the film, the viewer is presented with various visuals, that show that Mr. Hublot follows a fixed routine down to the dot, and very rarely does things out of his regular set of tasks. One day, while working, he sees a stray dog out of the window. At first, he pays no attention, but slowly he finds himself getting drawn to the cries of the dog. This is the first time in the short where we see Mr. Hublot getting deviated from his routine. The momentary distraction shows how his routine almost broke down. During the following days, we can see that Mr. Hublot is visibly distressed at the cries of the dog. One day, he looks out the window, when he hears the loud whirring drone of a machine, only to find no sign of the dog. Instead, he sees a garbage truck picking up a cardboard box and starts putting it in its crusher. Suddenly, Hublot realizes that the box that is about to be crushed, is the home of the stray dog that had caught his attention in the past few days. Thinking that the life of the innocent dog was in danger, he starts rushing downstairs to save it. In the process we see the inner conflict in his mind of whether to stick to his daily routine and let the dog die or save the dog and disrupt his routine. He decides to disregard his routine and rushes down, only to discover that the box had already been crushed. However, to his utter delight, he discovers the dog to be alive and well, and then he takes it in as a pet. What follows is a montage of him and his pet’s eventual life, where he leads his monotonous life but now it has a little randomness added to it due to the dog’s behavior. There comes a point in the story, where we see that the dog has become a large size and is creating all sorts of disasters for Mr. Hublot in his house. In what seems as a fit of rage, it seems as if Mr. Hublot dismantles his pet, because of him being unable to take care of him due to his large size. However, it is finally revealed to the viewer that instead of dismantling (and killing) his dog, they just move into a larger house opposite to his current living space. This allows him to go back to his old lifestyle, and at the same time allow his dog to live and move about freely.<br><br> -->
+				
+				<!-- <b>IN-DEPTH ANALYSIS</b><br> -->
+				<!-- Mr. Hublot is based on a steampunk universe and is mainly inspired from the creative universe of Belgian sculptor Stéphane Halleux. [1] Wikipedia defines “steampunk” as: -->
+				<!-- “Steampunk is a subgenre of science fiction or science fantasy that incorporates technology and aesthetic designs inspired by 19th-century industrial steam-powered machinery.” [2]<br><br> -->
+				
+				<!-- I really love the steampunk culture. For me, “being steampunk” generally means portraying what life would be, if everything in the world was made from gears, cogs, and machinery in place of organic elements. -->
+				<!-- Hublot means “Porthole” in French. A porthole is a type of circular window, that is often used in the hull of ships. According to Wikipedia:<br> -->
+				 <!-- <div class="w3-panel w3-bottombar"> -->
+					<!-- <p><i class="fa fa-quote-right w3-xxlarge"></i><br> -->
+					<!-- <i class="w3-serif w3-xlarge">“On a ship, the function of a porthole, when open, is to permit light and fresh air to enter the dark and often damp below-deck quarters of the vessel. It also affords below-deck occupants a limited view to the outside world. When closed, the porthole provides a strong water-tight, weather-tight and sometimes light-tight barrier.” [3]</i></p> -->
+				<!-- </div> -->
+				
+				<!-- This could be used to draw parallelism, as Hublot initially is a very restrictive person, who follows a meticulous routine, and leads a very non-colorful life however when he opens up to bringing in a new friend into his life, he “permits light to enter” (in the form of a pet) into his dull lifestyle. -->
+				<!-- According to an interview given to Indiewire [4]:<br> -->
+				
+				<!-- <div class="w3-panel w3-bottombar"> -->
+					<!-- <p><i class="fa fa-quote-right w3-xxlarge"></i><br> -->
+					<!-- <i class="w3-serif w3-xlarge"><b>What Witz told me about the connection between ‘Mr. Hublot’ and “Brazil”:</b><br>“Ah, Brazil [5] is definitely an inspiration. I love that movie. Another important inspiration was [Belgian artist] Stephane Halleux’s mechanical sculptures and characters. I worked with him and I took his characters to make something possible in animation and to give more emotion to characters. And according to that, we have created the world of Mr. Hublot. The 3D version is warmer than the sculptures. It’s poetic.”<br><br> -->
+					<!-- “We also wanted the interiors to feel comfortable, familiar, like a grandparents’ house, interiors that could contrast with the more menacing, oppressing exterior designs.”</i></p> -->
+				<!-- </div> -->
+				
+				<!-- Throughout the short, we can see many instances where Mr. Hublot’s obsessive-compulsive-disorder peeks through. He has a "thought" counter on his head that may signify that he has set his life to a point where he will only achieve a maximum of 9999 thoughts or actions in a day, counter resets after he sleeps (mimicking human mind after a sleep), always turns the light on 5 times or multiples of 5 – it could signify that his day depends on him making those 5 on-off cycles for everything else to go smoothly. He also has tendency to always straighten the pictures in his living room, irrespective of whether they are crooked or not. He can be said to be afraid of bringing change into his life.<br><br> -->
+				
+				<!-- For the environment, it can be seen that he lives in a small house - but everything is meticulously arranged and even though it may seem to be cluttered, it is perfectly arranged in a sort of a soothing pattern for him, as he knows where to find a thing when he needs. Also, subtle hints of paranoia may be seen, due to multiple locks on his doors, as well as living in a small space (with the thinking process behind it maybe being that a small space is easier to take care of and maintain according to his routine). -->
+				<!-- During the starting the pacing feels very routine (even if no shots are repeated), and this gives the feeling of monotony. As he brings the dog into his life, we gradually see his "monotonous routine" starting to collapse, as his focus remains on what the dog is doing, even when he is doing his regular work. <br><br> -->
+				
+				<!-- When he hears a garbage truck taking the thrash away, his paranoiac self instantly believes that the poor dog is inside the box is about to get crushed. Fear, anxiety, and paranoia overcomes him, as he hurriedly tries to go down to save the poor thing. During this act, we see that he doesn’t care about his daily routine, and his counter starts to rapidly change, indicating the rapidly changing thoughts inside his mind, as he tries to compose himself. Also, he hurriedly opens his locks, instead of his usual calm and slow pace. Just before leaving, he remembers that he hasn’t switched on the light 5 (or the number that he prefers) times, so his daily routine falls into jeopardy. Here, we can see an inner conflict a person has to go through while making crucial decisions; does he spend time on the light, or does he save the dog. Ultimately, he decides to scrap his routine and run down to save the dog - making the viewer believe that there is a more human aspect to Mr. Hublot than previously seen. Once the dog enters his life, we can see gradual changes to his lifestyle – i.e. him slowly moving away from his monotonous routine. Day by day, the dog and he live a peaceful life, until the dog becomes too large for him to fit in the apartment, and then he has to make a decision – does he get rid of the dog and embrace his old life, or get rid of the house, and start fresh – which comes with a lot of changes.<br><br> -->
+				
+				<!-- The main takeaways from this short, for me, are embracing the change that comes into your life, because change is always constant in life. Another is aspect that the short touches upon, is overcoming obstacles that may disrupt your lifestyle, and finally a nice aspect is developing a healthy relationship with your friends (here the dog can be a friend).<br><br> -->
+				
+				<b><div class="w3-center">CONCEPT ART</b></div><br>
+				
+				 <div class="flexcontainer">
+					 <div class="w3-row-padding">
+						<div class="w3-col s12"><img src=".\images\fall21\db\1.PNG" style="width:100%"></div>
+					 </div>
+					 <div class="w3-row-padding">
+						<div class="w3-col s12"><img src=".\images\fall21\db\2.PNG" style="width:100%"></div>
+					 </div>
+					 <div class="w3-row-padding">
+						<div class="w3-col s12"><img src=".\images\fall21\db\3.PNG" style="width:100%"></div>
+					 </div>
+					 <div class="w3-row-padding">
+						<div class="w3-col s12"><img src=".\images\fall21\db\4.PNG" style="width:100%"></div>
+					 </div>
+					 <div class="w3-row-padding">
+						<div class="w3-col s12"><img src=".\images\fall21\db\5.PNG" style="width:100%"></div>
+					 </div>
+					 <div class="w3-row-padding">
+						<div class="w3-col s12"><img src=".\images\fall21\db\6.PNG" style="width:100%"></div>
+					 </div>
+						
+				</div>
+				<br>
+				
+				<!-- <b>SOUND DESIGN</b><br> -->
+				<!-- My take on sound design is that it is cleverly set; every natural sound has been re-analyzed to sound more mechanical and through that convey that most of the universe is being run on cogs, gears and other contraptions. Also, there are not too many dialogs, and the short rather depends on visual elements and cues to convey the story and drive the narrative. Also, the soundtrack consists of two original pieces made by Li-lo*, with only one of them (titled <a href="https://youtu.be/Uo-N77_mpiA" target="_blank">Mr. Hublot</a>) consisting of lyrics that tell the story and personality of Mr. Hublot. <a href="https://pastebin.com/d9sQWLVT" target="_blank">See the lyrics!</a><br><br> -->
+				
+				<!-- <button class="collapsible w3-center"><b>FRAME BY FRAME BREAKDOWN (DEMONSTRATIONS OF 12 PRINCIPLES OF ANIMATION)</b></button> -->
+					<!-- <div class="content"> -->
+						
+						<!-- <ul style="list-style-type:square;"> -->
+							<!-- <li> 0:27 – The art by Stephen Halleux can be seen in picture frames -->
+							<!-- <li> 0:38 – Switches on light for 10 times (the light needs to be on multiples of 5 for him to satisfy his OCD; imagine keeping the TV volume at even numbers or multiples of 5) -->
+						<!-- </ul> -->
+							<!-- <div class="w3-center"><img src=".\images\AnimaticImages\HouseInterior.png" style="width:90%"></div> -->
+							<!-- <div class="w3-center"><i>Interior room shows Mr. Hublot's OCD</i></div><br> -->
+							<!-- <div class="w3-center"><img src=".\images\AnimaticImages\HouseInteriorGoldenRatio.png" style="width:90%"></div> -->
+							<!-- <div class="w3-center"><i>Many scenes follow the golden-ratio layout</i></div><br> -->
+							<!-- <div class="w3-center"><img src=".\images\AnimaticImages\ExternalShot.png" style="width:90%"></div> -->
+							<!-- <div class="w3-center"><i>Steampunk universe depicted – mechanical, un-polished, cramped, smoggy, dull color palette</i></div><br> -->
+							<!-- <div class="w3-center"><img src=".\images\AnimaticImages\CuckooClock.png" style="width:90%"></div> -->
+							<!-- <div class="w3-center"><i>Hublot hates unnecessary sound in his life (judging from his quiet lifestyle, and he has wound the mouth of the cuckoo clock so that the noise is muted)</i></div><br> -->
+							
+						<!-- <ul style="list-style-type:square;"> -->
+							<!-- <li> 0:56 – Curtains have little squash and stretch (cloth animation); secondary action is visible after door opens -->
+							<!-- <li> 1:08 – Overlapping action can be seen -->
+							<!-- <li> 2:25 – Taps glass in multiples of 5 to sync with clock’s rate -->
+							<!-- <li> 2:34 – Follow-through action can be seen on his sleeve, goggle straps, and eye-piece -->
+							<!-- <li> 2:52 – First signs of deviation from his routine; notice how the cuckoo bird sounds loud to him (still muted); that’s because he was lost in thought, and even the slightest sound jerked him back into reality -->
+							<!-- <li> 3:06 – Lots of arcs in his body movements -->
+							<!-- <li> 3:36 to 3:54 – Mechanical dog sequence; the dog, even though mechanical, shows so much similar <li> actions to real life dogs, full of enthusiasm, curiousness, energy etc., and encapsulates many of the emotions of animals (dogs here), even though it’s a mechanical thing. Here’s the fun part about steampunk culture – it makes very intricately detailed mechanical “things” come to life, and exhibit actions that are borderline comparable to real-life motion of their counterpart. -->
+							<!-- <li> 4:33 – Anticipation can be seen; notice the hand grabs the edge of the table to give the chair a force to move in the opposite direction; slow-in-slow-out the feeling of inertia can be seen <br><br> -->
+							<!-- <div class="w3-center"><img src=".\images\AnimaticImages\ForceBeingApplied.png" style="width:90%"></div><br> -->
+							<!-- <li> 4:48 – One of my favorite shots; you can see the camera zoom in, but not smoothly. Mr. Hublot whips his monocle and changes the frames in a systematic order to change the zoom of “his” (a.k.a. the viewers’ vision) – that is what a majority of steampunk based pieces of work are based on, practicality of what can be seen visually on the subject – the zoom could’ve been a smooth exponential one (as seen in many film shots), but this short does a constantly great job of keeping up with the theme, and constantly adhering to the fact that this is a steampunk universe, where there is a gear or cog or device attached to the “responder” somewhere that is making the actions happen.<br><br> -->
+							<!-- <li> 4:57 – Probably my most favorite scene from the short – hilarious yet the makers have given attention to detail. Here, he is not a hero who can suddenly save someone at the drop of a dime. His “flaws” catch up to him, as he can be seen constantly fighting his regular habit of switching off the lights for a set amount of time (he can even be seen counting – which I felt has a deeper meaning that is being conveyed, which is that in times of crisis and instant decision making scenarios, Hublot shows this vulnerable human side to him, where he is no longer an intelligent engineer and constructor. He has trouble even figuring out what count he is on, to the point where he must literally “go back to basics”). Again, we can recall a major aspect of steampunk culture being depicted here – human (and animal) like instincts of non-living organisms. -->
+						<!-- </ul> -->
+						<!-- <i>Another thing to mention is the counter on his forehead. How I interpreted it was that, he has meticulously set his everyday life to such a point where he knows that at the end of the day, his counter should read 9999 or less, which basically means that he has had a productive day. Later we notice that after sleeping his counter resets to zero, from where we can conclude that it’s a daily thing. Also, in times of stress and duress, it can be seen that his counter “malfunctions” or rapidly changes erratically, which I believe is a metaphor of him losing track of his thought process, and having to think a lot because he is internally having a conflict – of whether he should abandon his daily routine for saving the dog’s life or should he complete his actions, keep everything on track, and let the poor soul die.</i> -->
+						<!-- <br> -->
+						
+						<!-- <ul style="list-style-type:square;"> -->
+						<!-- <li> 5:14 – Anticipation, body arcs, follow through action, overlapping action, and secondary action depicted -->
+						<!-- <li> 5:20 – Some more secondary action and follow-through -->
+						<!-- <li> 6:12 – More example of steampunk culture -->
+						<!-- <li> 6:28 – Dog and Hublot montage; mechanical dog displays real-life dog like characteristics (sadness, concentration, shame, curiosity, happiness etc.) – e.g. its tail keeps wagging or not wagging depending on its emotions -->
+						<!-- <li> 7:27 – We can see that he still has not left his OCD tendencies -->
+						<!-- <li> 7:34 – The wall gets bent due to force; it conveys to user the sheer power and force the mechanical dog has because it may be a dog, but its mechanical, so the reactions on the environment can be seen -->
+						<!-- <li> 7:40 – Deformity of the house -->
+						<!-- <li> 7:49 – Wakes up and the counter starts -->
+						<!-- <li> 8:16 – A breakdown scene depicted here. It displays multiple principles of animation; the lighting changes the mood to a more serious and dark one – red has always been associated with danger, and the imagery of Mr. Hublot with a drill can come off to the viewer as a depiction that, in his anger, he decides to dismantle the dog (which is a metaphor for death in steampunk culture) -->
+						<!-- <li> 8:16 to 8:50 – Here, a technique of misdirection applied in the sequence, where the shots are purposefully made to bring the user’s thoughts to believe that Mr. Hublot has dismantled the dog out of rage (bolstered by the color scheme of the shots – a dark atmosphere signifying the end of something, and the red color possibly indicating rage) – notice the lack of music (only at 8:35 there is a low ominous organ sound to foreshadow a dark event happening), only the noise of the apparatus can be heard properly <br><br> -->
+						<!-- <div class="w3-center"><img src=".\images\AnimaticImages\Misdirection.png" style="width:90%"></div><br> -->
+						<!-- <li> 9:09 – Some more stretch and squash action -->
+						<!-- <li> 9:14 – Seemingly “happy” and “joyous” music starts playing which changes the mood of the scene from the previous ones and depicts what really happened – that Mr. Hublot did not really dismantle the dog; they moved to a bigger house. Mr. Hublot sacrificed a major portion of his previous routine, for making the life of his new friend more comfortable -->
+						<!-- <li> 9:39 – Here a technique called as foreshadowing can be seen, where the final resolution of the conflict (i.e. the final location where they move to, so as to accommodate the size of the growing dog) was introduced previously in the short, but it is not expected of the viewer to understand the significance of the location, until this scene. -->
+						<!-- <li> 9:48 – A neat little note here is that in the bottom left corner we can see the same workers who were working on the building on the left, now working on Mr. Hublot’s house, because he has sold that and has moved on. Here, the concept of continuity is displayed in full effect and it is continuity not only in the scene but in the whole society that the story has created.<br><br> -->
+						
+						<!-- <li> END CREDIT SCENES – This is not a thing that filmmakers generally tend to put in, but here the creators put so much thought process into it. We can see Mr. Hublot and his pet having a wonderful time on a wheel-swing set, signifying that they are leading a comfortable life after moving in, and Mr. Hublot has opened a little more in his monotonous lifestyle. Another shot that may go unnoticed by some people is that even in the end we can see Hublot turning the light off and on-again multiple times, signifying that even if you have moved on, old habits die hard.<br><br> -->
+						
+						<!-- <div class="w3-center"><img src=".\images\AnimaticImages\EndCredit1Wheel.png" style="width:90%"></div><br> -->
+						<!-- <div class="w3-center"><img src=".\images\AnimaticImages\SomeHabitsDieHard.png" style="width:90%"></div><br> -->
+						<!-- </ul> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				
+			 <!-- <div class="w3-panel w3-border w3-light-grey w3-round-large"> -->
+				<!-- [1] <a href="https://www.stephanehalleux.com/stephane-halleux" target="_blank">Stephane Halleux is a sculptor based in Belgium</a><br> -->
+				<!-- [2] <a href="https://en.wikipedia.org/wiki/Steampunk" target="_blank">Steampunk</a><br> -->
+				<!-- [3] <a href="https://en.wikipedia.org/wiki/Porthole" target="_blank">Porthole</a><br> -->
+				<!-- [4] <a href="https://www.indiewire.com/2014/03/all-about-oscar-winning-animated-short-mr-hublot-where-to-watch-backstage-interview-and-more-trailer-193342/" target="_blank">Indiewire Interview</a><br> -->
+				<!-- [5] <a href="https://en.wikipedia.org/wiki/Brazil_(1985_film)" target="_blank">“Brazil”</a> is a 1985 dystopian science fiction film directed by Terry Gilliam and written by Gilliam, Charles McKeown, and Tom Stoppard. The film stars Jonathan Pryce and features Robert De Niro, Kim Greist, Michael Palin, Katherine Helmond, Bob Hoskins and Ian Holm. -->
+
+			<!-- </div>  -->
+			
+		<!-- <hr> -->
+		<!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
+		
+		
+		
+		<!-- PORTFOLIO LINKS -->
+			<div class="w3-container w3-center w3-row w3-padding-large w3-margin-bottom">
+		
+				<div class="w3-row w3-margin-top w3-margin-bottom">
+				
+					<div class="w3-quarter container" id="links">
+						<a href="./index.html"> <img src="./images/home.png" alt="Avatar" style="width:75px">
+						<div class="overlay">
+							<div class="text">Home</div>
+						</div>
+					</div>
+					
+					<div class="w3-quarter container" id="links">
+						<a href="./f21_about.html"> <img src="./images/person.png" alt="Avatar" style="width:75px">
+						<div class="overlay">
+							<div class="text">About Me</div>
+						</div>
+					</div>
+					
+					<div class="w3-quarter container" id="links">
+						<a href="./f21_milestones.html"> <img src="./images/milestones.png" alt="Avatar" style="width:75px">
+						<div class="overlay">
+							<div class="text">Milestones</div>
+						</div>
+					</div>
+				
+				
+					<div class="w3-quarter container" id="links">
+						<a href="./f21_videos.html"> <img src="./images/youtube-normal.png" alt="Avatar" style="width:75px">
+						<div class="overlay">
+							<div class="text">Assignments</div>
+						</div>
+					</div>
+				
+				</div>
+		
+			</div>
+
+		</div>
+	</div>
+	
+
+		
+
+	<!-- w3-text-white makes the black icons into white -->
+
+	<!-- Footer -->
+	<footer class="w3-center w3-padding-32 w3-text-white">
+		<div class="w3-xxlarge">
+			<a href="https://twitter.com/BinaryVectorJr" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.instagram.com/binaryvectorjr/" target="_blank"><i class="fa fa-instagram w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.linkedin.com/in/angshuman-mazumdar-a0b75a130/" target="_blank"><i class="fa fa-linkedin w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://github.com/BinaryVectorJr" target="_blank"><i class="fa fa-github w3-text-white w3-hover-opacity"></i></a>&nbsp
+		</div>
+		<p class="w3-small"> © Angshuman Mazumdar, 2021 <img src="./images/AmmoCrate2.gif" alt="fun animation" style="padding-bottom: 10px;" <span title="My first animation!"></span></p>
+	</footer>
+
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		} 
+	  });
+	}
+</script>
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+
+</html>
+</html>

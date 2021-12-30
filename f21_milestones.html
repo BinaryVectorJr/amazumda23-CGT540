@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<title>Fall 2021 Project Milestones</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	
+	.w3-row-padding img {margin-bottom: 12px}
+	<!-- /* Remove margins from "page content" on small screens */ -->
+	<!-- @media only screen and (max-width: 600px) {#main {margin-left: 0}} -->
+	.wrapper { text-align: center; }
+	.button {
+		position: absolute;
+		top: 50%;
+	}
+	
+	hr{ 
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+	
+		border=0;
+		height=1px;
+	}
+	
+	footer{
+
+		background-color: #222;
+		
+		<!-- FUTURE SELF REMOVE everything except bg color ONCE YOU ADD IN VIDEOS, ELSE IT WILL LOOK WIERD -->
+
+	}
+	
+	body {
+		font-family: ubuntu
+		padding: 0;
+		margin: 0;
+		font-size: 18px;
+	}
+	
+	
+	.container {
+	  position: relative;
+	  font-size: 18px;
+	}
+
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  border: 3px solid black;
+	  transition: .3s;
+	  background: linear-gradient(to left, #C28E0E, #98700D);
+	}
+	
+	.fa:hover {
+		color: gold !important;
+	}
+
+	.container:hover .overlay {
+	  	opacity: 3; 
+		filter: alpha(opacity=30);
+		
+		<!-- transition: all 0.5s ease-in-out; -->
+		<!-- -webkit-transition: all 0.5s ease-in-out; -->
+		<!-- -moz-transition: all 0.5s ease-in-out; -->
+		<!-- -o-transition: all 0.5s ease-in-out; -->
+		
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		-moz-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		-webkit-box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+		box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+	}	
+	
+
+	.text {
+	  color: black;
+	  font-size: 16px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+
+	<!-- CONTENT STYLING STARTS FROM HERE -->
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	img {
+	  vertical-align: middle;
+	}
+
+	<!-- /* Position the image container (needed to position the left and right arrows) */ -->
+	.container {
+	  position: relative;
+	}
+
+	<!-- /* Hide the images by default */ -->
+	.mySlides {
+	  display: none;
+	}
+
+	<!-- /* Add a pointer when hovering over the thumbnail images */ -->
+	.cursor {
+	  cursor: pointer;
+	}
+
+	<!-- /* Next & previous buttons */ -->
+	.prev,
+	.next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 40%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	}
+
+	<!-- /* Position the "next button" to the right */ -->
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	<!-- /* On hover, add a black background color with a little bit see-through */ -->
+	.prev:hover,
+	.next:hover {
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	<!-- /* Number text (1/3 etc) */ -->
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	<!-- /* Container for image text */ -->
+	.caption-container {
+	  text-align: center;
+	  background-color: #222;
+	  padding: 2px 16px;
+	  color: white;
+	}
+
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Six columns side by side */
+	.column {
+	  float: left;
+	  width: 25%;
+	}./images/milestone1/Act1.png
+
+	<!-- /* Add a transparency effect for thumnbail images */ -->
+	.demo {
+	  opacity: 0.6;
+	}
+
+	.active,
+	.demo:hover {
+	  opacity: 1;
+	}
+
+</style>
+
+<body class="w3-white">
+
+	<!-- BEGIN PAGE CONTENT -->
+	<div id="main">
+	
+	<!-- Header/Home -->
+	<header class="w3-container w3-center w3-white" id="home">
+		<h1 class="w3-xxxlarge"><strong>FALL 2021 PROJECT MILESTONES</strong></h1>
+	</header>
+
+	<!-- ABOUT SECTION -->
+	
+	<div class="w3-content w3-justify w3-text-grey w3-padding-large" id="about">
+		On this page, I will post regular updates, on the different milestones that I will need to reach, throughout the development of the major project for the course. Link to presentation file is <a href = "https://drive.google.com/drive/folders/1EVf8AtoVjADm3Xq1DdvhAIVq9DG-BV12?usp=sharing" target="_blank"> here</a>.
+		<hr>
+		
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		
+		<h2 style="text-align:center">FINAL ANIMATED VIDEO: Memories</h2>
+		<br>
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/aNuDAFOw-T8" title="Memories Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<br>
+		
+		<hr>
+		
+		<!-- <div class="w3-center">Coming soon!</div> -->
+		
+		<h2 style="text-align:center">PRELIMINARY STORYBOARD</h2>
+
+		<div class="container w3-center">
+		  <div class="mySlides">
+			<div class="numbertext">1 / 4</div>
+			<img src="./images/fall21/storyboard/540_Act_1.png" style="width:91%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="./images/fall21/storyboard/540_Act_2.png" style="width:91%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="./images/fall21/storyboard/540_Act_3.png" style="width:91%">
+		  </div>
+			
+		  <div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="./images/fall21/storyboard/540_Act_4.png" style="width:91%">
+		  </div>
+			
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
+
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+
+		  <div class="row">
+			<div class="column">
+			  <img class="demo cursor" src="./images/fall21/storyboard/540_Act_1.png" style="width:100%" onclick="currentSlide(1)" alt="Act1">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="./images/fall21/storyboard/540_Act_2.png" style="width:100%" onclick="currentSlide(2)" alt="Act2">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="./images/fall21/storyboard/540_Act_3.png" style="width:100%" onclick="currentSlide(3)" alt="Act3">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="./images/fall21/storyboard/540_Act_4.png" style="width:100%" onclick="currentSlide(4)" alt="Act4">
+			</div>
+		  </div>
+		</div>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/xNUZth3Fslo" title="3D Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<br>
+		<hr>
+		
+		<h2 style="text-align:center">MILESTONE 1: ENVIRONMENT AND CHARACTERS</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<img src="./images/fall21/p1.png" style="width:91%" onclick="currentSlide(1)" alt="Act1">
+		</div>
+		
+		<div class="container w3-center">
+			<img src="./images/fall21/p2.png" style="width:91%" onclick="currentSlide(1)" alt="Act1">
+		</div>
+		
+		<!-- <div class="container w3-center"> -->
+			<!-- <img src="./images/fall21/chars.png" style="width:100%" onclick="currentSlide(1)" alt="Act1"> -->
+		<!-- </div> -->
+		
+		<div class="container w3-center">
+			<img src="./images/fall21/temp1.png" style="width:91%" onclick="currentSlide(1)" alt="Act1">
+		</div>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/7oDYKkSn5k0" title="Milestone-01-Test1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2 style="text-align:center">MILESTONE 2: CHARACTER CLOTHED AND LAYOUT</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<img src="./images/fall21/chars2.png" style="width:91%" onclick="currentSlide(1)" alt="Act1">
+		</div>
+		
+		<div class="container w3-center">
+			<img src="./images/fall21/chars3.png" style="width:91%" onclick="currentSlide(1)" alt="Act1">
+		</div>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/YH-4r8t0p7Y" title="Scene 01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/bb1ChFJAi0Q" title="Scene 05-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/gOx6O4ecM44" title="Scene 05-2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2 style="text-align:center">MILESTONE 3: Memories Pass 1</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/rC1Oh4O9jiw" title="Memories - Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2 style="text-align:center">Memories Pass 2</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<iframe width="853" height="505" src="https://www.youtube.com/embed/Y7Aa3yrwhn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2 style="text-align:center">ROADMAP</h2>
+		
+		<br>
+		
+		<div class="container w3-center">
+			<img src="./images/fall21/sch1.png" style="width:100%" onclick="currentSlide(1)" alt="Schedule 1">
+		</div>
+		
+		<br>
+		<br>
+		
+		<div class="container w3-center">
+			<img src="./images/fall21/sch2.png" style="width:100%" onclick="currentSlide(1)" alt="Schedule 2">
+		</div>
+		
+		<br>
+		<hr>
+		
+
+		
+		
+		<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		
+		<!-- PORTFOLIO LINKS -->
+		<div class="w3-container w3-center w3-row w3-padding-large w3-margin-bottom">
+		
+			<div class="w3-row w3-margin-top w3-margin-bottom">
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./index.html"> <img src="./images/home.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Home</div>
+					</div>
+				</div>
+				
+				<div class="w3-quarter container" id="links">
+					<a href="./f21_about.html"> <img src="./images/person.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">About Me</div>
+					</div>
+				</div>
+				
+				<!-- My Portfolio Link -->
+				<div class="w3-quarter container" id="links">
+					<a href="./f21_videos.html"> <img src="./images/youtube-normal.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Assignments</div>
+					</div>
+				</div>
+				
+				
+				<!-- My other work link -->
+				<div class="w3-quarter container" id="links">
+					<a href="./f21_blog.html"> <img src="./images/other-normal.png" alt="Avatar" style="width:75px">
+					<div class="overlay">
+						<div class="text">Critique Blog</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		</div>
+
+	</div>
+	
+
+		
+
+	<!-- w3-text-white makes the black icons into white -->
+
+	<!-- Footer -->
+	<footer class="w3-center w3-padding-32 w3-text-white">
+		<div class="w3-xxlarge">
+			<a href="https://twitter.com/BinaryVectorJr" target="_blank"><i class="fa fa-twitter w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.instagram.com/binaryvectorjr/" target="_blank"><i class="fa fa-instagram w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://www.linkedin.com/in/angshuman-mazumdar-a0b75a130/" target="_blank"><i class="fa fa-linkedin w3-text-white w3-hover-opacity"></i></a>&nbsp
+			<a href="https://github.com/BinaryVectorJr" target="_blank"><i class="fa fa-github w3-text-white w3-hover-opacity"></i></a>&nbsp
+		</div>
+		<p class="w3-small"> © Angshuman Mazumdar, 2021 <img src="./images/AmmoCrate2.gif" alt="fun animation" style="padding-bottom: 10px;" <span title="My first animation!"></span></p>
+	</footer>
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+
+<script>
+	//Used to trigger the accordion
+	function myFunction1(id) {
+		var x = document.getElementById(id);
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		} else { 
+			x.className = x.className.replace(" w3-show", "");
+		}
+	}
+	
+</script>
+
+<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+</script>
+
+</html>

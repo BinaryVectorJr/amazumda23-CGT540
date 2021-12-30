@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+	font-size: 18px;
+    font-family: ubuntu;
+}
+
+.bg-image {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+    /* Background styles */
+    background-image: url('./images/bg1.jpg');
+	
+	/* Add the blur effect */
+	filter: blur(6px);
+	-webkit-filter: blur(6px);
+	
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-text {
+  /* background-color: rgb(0,0,0); */
+  /* background-color: rgba(0,0,0, 0.4);  */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+      /* Text styles */
+    text-align: center;
+    color: black;
+}
+
+
+.bg-text h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.bg-text .btn {
+    /* Positioning and sizing */
+    display: inline;
+    width: 250px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    /* Text styles */
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid black;
+    
+    /* Background styles */
+	opacity: 0.5;
+    background: linear-gradient(to left, #C28E0E, #98700D);
+	
+	transition: 0.3s;
+}
+
+.bg-text .btn:hover {
+    /* Positioning and sizing */
+    display: inline;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    /* Text styles */
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid black;
+    
+    /* Background styles */
+	opacity: 1;
+    background: linear-gradient(to left, #C28E0E, #98700D);
+}
+
